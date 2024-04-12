@@ -36,10 +36,61 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p></p>
+                    <p>Hey, myself Ishan Gujarathi, a Final Year Student from Artificial Intelligence and Data Science Department at Vishwakarma Institute of Technology, Pune.
+                        I am a Coding Enuthusiast, who loves developing real world projects. I like to connect with people and I'm constantly trying to upskill and learn new technologies!   
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <li><span>Web Development</span><br>Loves to build Web Applications</li>
+                           <li><span>Problem Solving</span><br>Consistently solving DSA Problems across various Coding Platforms</li>
+                           <li><span>Competitive Programming</span><br>Actively Engaging into CP on various Platforms</li>
+                           <li><span>Machine and Deep Learning</span><br>Building various Models to solve complex problems</li>    
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                           <li><span>Jan 2024 - Present</span><br>Backend Developer Intern at AI4Bharat</li> 
+                           <li><span>Dec 2023 - Jan 2024</span><br>Backend Developer Intern at Chat360 </li>  
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <li><span>Aug 2020 - Present</span><br>B.Tech Artificial Intelligence and Data Science from Vishwakarma Institute of Technology, Pune</li> 
+                           <li><span>July 2018 - May 2020</span><br>HSC - 12th Standard from Ashok Vidyalaya and Junior College, Pune</li>
+                           <li><span>June 2006 - June 2018</span><br>SSC - 10th Standard from Dr Kalmadi Shamarao High School, Pune</li>   
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+           } 
+
+           for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+           }
+
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
