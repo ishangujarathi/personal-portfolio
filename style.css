@@ -81,6 +81,11 @@ nav ul li a:hover::after{
     color:#ff004f;
 }
 
+.header-text h3{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
 /* About Section */
 
 #about{
@@ -164,6 +169,11 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+
+/*Tech Stack*/
+
+
 
 
 
